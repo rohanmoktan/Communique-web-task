@@ -1,0 +1,294 @@
+/* body font */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* navbar */
+
+.navbar {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.top{
+    margin-left: 60px;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.navbar .premium-services {
+    color: orange;
+    background-color: rgba(255, 166, 0, 0.274);
+    padding: 12px 8px;
+    border-radius: 2px;
+}
+
+.navbar li:not(.monster_logo){
+    cursor: pointer;
+}
+
+ .monster_logo img{
+    position: absolute;
+    margin-top:-22px ;
+    margin-left: -116px;
+}
+
+.navbar li:not(.covid):hover{
+    color: blueviolet;
+    border-radius: 2px;
+}
+
+.navbar .covid {
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: orangered;
+}
+
+
+
+.navbar .navbar_buttons img {
+    height: 10px;
+}
+
+.navbar .new{
+    text-align: right;
+}
+
+.new strong{
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+.navbar img{
+    height: 45px;
+}
+
+.navbar ul {
+    margin: auto;
+}
+
+/* main_body */
+
+.main_body{
+    background-image: url("background_image.png");
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.main_body h1 {
+    margin-left: 90px;
+}
+
+
+
+.main_body .navbar .low li:hover{
+    color: white;
+}
+
+/* mini bodypart present on the  left */
+.mini_body_left {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 100%;
+    width: 800px;
+    margin-left: 5%;
+    padding: 2% 2.5%;
+}
+
+
+/* search bar */
+
+/* search bar below */
+
+.search-bar {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    padding: 10px 5px;
+}
+
+.search-bar strong {
+    background-color: blueviolet;
+    padding: 6px 36px;
+    padding-bottom:11px;
+}
+
+.advanced-search p {
+    text-align: right;
+}
+.trending_searches{
+    display: inline-block;
+    max-width: 653px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 22px;
+    
+}
+
+h4 {
+    display: inline-block;
+}
+
+.right_box{
+    display: inline-block;
+    padding: 7px;
+}
+.left_box{
+    display: inline-block;
+    padding: 7px;
+}
+
+.mini_body_right {
+    display: inline-block;
+    background-color: black;
+    margin-left: 1%;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.inner-div {
+    background-color: white;
+    color: black;
+    height: 156px;
+    width: 150px;
+    font-size: 12px;
+    padding: 32px;
+    text-align: center;
+}
+
+.inner-div .new-to-monster{
+   margin-top: 10px;
+}
+
+.innermost-div {
+   margin-top: 10px;
+}
+
+.upload-resume {
+    background-color: orange;
+    color: white;
+    display: inline-block;
+    padding: 7px 15px;
+}
+
+.job-alert {
+    border:1px solid black;
+    display: inline-block;
+    padding: 7px 30px ;
+    color: blueviolet;
+}
+
+
+
+
+/* slidebar */
+
+.container {
+    position: relative;
+}
+
+.slides{
+    display: flex;
+    /* width: 683px; */
+    /* overflow: hidden; */
+    animation: slide 40s linear infinite;
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-170px * 7));
+    }
+}
+
+.slidebar img {
+    height: 75px;
+    width:170px;
+    margin: 0 20px;
+}
+
+
+
+.slide-control{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* responsivenes using media query */
+
+@media screen and (max-width:1450px){
+      .mini_body_right{
+        position: relative;
+        margin: 10px 25%;
+      }
+
+      .main_body{
+        margin: 10px auto;
+      }
+    
+}
+
+@media  screen and (max-width:1225px) {
+    .navbar{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .navbar li{
+        padding: 2px;
+    }
+    button {
+        padding: 0;
+    }
+
+    .main_body{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:920px) {
+    .trending_searches{
+        position: relative;
+    }
+    .mini_body_right{
+        background-color: transparent;
+    }
+    
+}
+
